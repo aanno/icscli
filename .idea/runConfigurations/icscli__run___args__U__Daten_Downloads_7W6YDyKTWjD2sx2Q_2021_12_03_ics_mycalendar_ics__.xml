@@ -1,0 +1,25 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="icscli [run --args=&quot;U:/Daten/Downloads/7W6YDyKTWjD2sx2Q-2021-12-03.ics mycalendar.ics&quot;]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
+    <ExternalSystemSettings>
+      <option name="executionName" />
+      <option name="externalProjectPath" value="$PROJECT_DIR$" />
+      <option name="externalSystemIdString" value="GRADLE" />
+      <option name="scriptParameters" value="" />
+      <option name="taskDescriptions">
+        <list />
+      </option>
+      <option name="taskNames">
+        <list>
+          <option value="run" />
+          <option value="--args=&quot;U:/Daten/Downloads/7W6YDyKTWjD2sx2Q-2021-12-03.ics mycalendar.ics&quot;" />
+        </list>
+      </option>
+      <option name="vmOptions" />
+    </ExternalSystemSettings>
+    <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+    <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+    <DebugAllEnabled>false</DebugAllEnabled>
+    <ForceTestExec>false</ForceTestExec>
+    <method v="2" />
+  </configuration>
+</component>
