@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm")
     // https://kotlinlang.org/docs/gradle-configure-project.html#set-jdk-version-with-the-task-dsl
     // id("org.gradle.toolchains.foojay-resolver-convention") version("0.6.0")
     // id("org.javamodularity.moduleplugin") version "1.8.12"
@@ -12,8 +12,13 @@ plugins {
 group = "org.github.aanno.ics"
 version = "1.0-SNAPSHOT"
 
+val mavenUrl1 by properties
+
 repositories {
-    mavenCentral()
+    // mavenCentral()
+    maven {
+        url = uri(mavenUrl1!!)
+    }
 }
 
 val kotlinLoggingVersion by properties
