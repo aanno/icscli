@@ -2,7 +2,7 @@
 module com.github.aanno.ics {
     // error: module not found: clikt.jvm
     // requires transitive clikt.jvm;
-    requires transitive kotlin.stdlib;
-    requires transitive io.github.oshai.kotlinlogging;
-    requires transitive org.mnode.ical4j.core;
+    requires kotlin.stdlib;
+    requires io.github.oshai.kotlinlogging;
+    requires org.mnode.ical4j.core;
 }
