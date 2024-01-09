@@ -57,7 +57,7 @@ class CliktIcsCommand : CliktCommand(
 
         val outCalendar = inCalendar // inCalendar.copy()
         outCalendar.getComponents<CalendarComponent>().forEach { c ->
-            when (c::class.java as Class<in CalendarComponent>) {
+            when (c::class.java) {
                 VEvent::class.java -> {
                     val event = c as VEvent
                     try {

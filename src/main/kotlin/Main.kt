@@ -15,12 +15,12 @@ fun main(args: Array<String>) {
     CliktIcsCommand().main(args)
 }
 
-fun <T : CalendarComponent> summary(c: Calendar): Map<Class<in T>, Int> {
+fun <T : CalendarComponent> summary(cal: Calendar): Map<Class<in T>, Int> {
     val content: MutableMap<Class<in T>, Int> = mutableMapOf()
-    c.getComponents<CalendarComponent>().forEach { c ->
-        val clazz: Class<in T> = c::class.java as Class<in T>
-        incrementCount(content, clazz, 1)
-        when (c::class.java as Class<in CalendarComponent>) {
+    cal.getComponents<CalendarComponent>().forEach { c ->
+        val clazz: Class<out CalendarComponent> = c::class.java
+        incrementCount(content, clazz as Class<CalendarComponent>, 1)
+        when (c::class.java) {
             VEvent::class.java -> {
                 val event = c as VEvent
                 // event.alarms
